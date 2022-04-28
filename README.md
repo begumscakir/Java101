@@ -1,6 +1,6 @@
 # Java101
 *I wrote a flight booking system in which you can create flights and their details,
-search for a flight based on location, date, flight class preference and available seats,
+search for a flight based on location, date, class preference and available seats,
 book a flight using personal information and food choice,
 fare is included.
 
