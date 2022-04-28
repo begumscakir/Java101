@@ -1,8 +1,7 @@
-package Flight;
+package FlightBookingSystem;
 import java.time.LocalDate;
 
-public class Flight_Reservation {
-
+public class Flights {
     private int flightNumber;
     private String flightClass;
     private String fromAirport;
@@ -11,13 +10,13 @@ public class Flight_Reservation {
     private int fare;
     private LocalDate doj;
 
-    public Flight_Reservation(){
+    public Flights(){
         super();
     }
 
-    public Flight_Reservation (int flightNumber, String flightClass, String fromAirport, String toAirport, int availableSeats,
-                               int fare, LocalDate doj){
-super();
+    public Flights(int flightNumber, String flightClass, String fromAirport, String toAirport, int availableSeats,
+                   int fare, LocalDate doj){
+    super();
 
         this.flightNumber = flightNumber;
         this.flightClass= flightClass;
@@ -26,8 +25,8 @@ super();
         this.availableSeats= availableSeats;
         this.fare= fare;
         this.doj= doj;
+    }
 
-}
     public int getFlightNumber(){
         return flightNumber;
 

@@ -1,23 +1,21 @@
-package Flight;
+package FlightBookingSystem;
 
-public class Passenger_Food {
+public class Passenger {
     private int passengerID;
     private String passengerName;
     private int passengerAge;
     private int foodChoice;
 
-    public Passenger_Food() {
+    public Passenger() {
         super();
     }
-
-    public Passenger_Food(int passengerID, String passengerName, int passengerAge, int foodChoice){
+    public Passenger(int passengerID, String passengerName, int passengerAge, int foodChoice){
         super();
         this.passengerID= passengerID;
         this.passengerName= passengerName;
         this.passengerAge=passengerAge;
         this.foodChoice=foodChoice;
     }
-
 
     public String getPassengerName(){
         return passengerName;
@@ -42,9 +40,7 @@ public class Passenger_Food {
     }
     public void setFoodChoice(int foodChoice){
         this.foodChoice=foodChoice;
-
     }
-
 
 }
 

@@ -1,20 +1,19 @@
-package Flight;
+package FlightBookingSystem;
 import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
 
-
-public class BookFlight_Main {
+public class Book_Flight {
     public static void main(String[] args) {
 
         //Finding available flights
         Scanner searchInput = new Scanner(System.in);
 
         System.out.println("**Use English characters**");
-        System.out.println("Please enter departure place: ");
 
+        System.out.println("Please enter departure place: ");
         String from_data= searchInput.nextLine();
 
         System.out.println("Please enter arrival place: ");
@@ -41,12 +40,10 @@ public class BookFlight_Main {
 
 
         //Passenger Data
-        List<Passenger_Food> passengerList=new LinkedList<>();
-
+        List<Passenger> passengerList=new LinkedList<>();
         Scanner input2 = new Scanner(System.in);
 
         for (int b=0; b<seat_data;b++){
-
         System.out.println();
         System.out.println("Please enter name to book: ");
 
@@ -54,17 +51,14 @@ public class BookFlight_Main {
 
         String name_data= searchInput.nextLine();
 
-
-
         System.out.println("Please enter age: ");
         int age_data=searchInput.nextInt();
 
         System.out.println("Please enter ID: ");
         int ID_data= searchInput.nextInt();
 
+
         //Food Choice, adjust based on preference
-
-
         int foodChoice_data;
         String choose;
 
@@ -75,7 +69,6 @@ public class BookFlight_Main {
 
         foodChoice_data= input2.nextInt();
 
-
         switch (foodChoice_data){
             case 1:
                 choose= "Standard Meal";
@@ -83,29 +76,25 @@ public class BookFlight_Main {
             case 2:
                 choose= "Diabetic Meal";
                 break;
-
             case 3:
                 choose= "Vegetarian Meal";
                 break;
-
             case 4:
                 choose= "Gluten-free Meal";
                 break;
-
         }
 
+        passengerList.add(new Passenger(ID_data,name_data,age_data,foodChoice_data));
 
-        passengerList.add(new Passenger_Food(ID_data,name_data,age_data,foodChoice_data));}
-
+        }
 
 
         Flight_Details.bookFlights(flight_data, passengerList);
 
         System.out.println();
-        System.out.println("Your flight is booked, have a nice day.");
+        System.out.println("Your flight is booked, have a nice day :).");
 
     }
-
 
 }
 
