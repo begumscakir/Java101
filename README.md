@@ -4,7 +4,7 @@ search for a flight based on location, date, class preference and available seat
 
 *Food choice and fare are included.
 
-*I wrote the booking system using the reference below.
+*The booking system is written using the reference below.
 
 Reference
 Java Projects For Beginners | Railway Reservation System in Java | Java Collection Framework Example:
