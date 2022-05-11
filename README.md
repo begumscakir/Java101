@@ -1,7 +1,7 @@
 # Flight Booking System
 * You can create flights with details,
 * search for a flight based on location, date, class preference and available seats
-* and book a flight using personal information.
+* book a flight using personal information.
 
 I used the reference below.
 
